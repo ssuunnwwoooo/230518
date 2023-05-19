@@ -112,7 +112,6 @@ section {
 }
 
 body {
-    color: #444;
     line-height: 1;
 }
 
@@ -124,6 +123,11 @@ ul {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
 }
 
 blockquote,
@@ -142,13 +146,4 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-address {
-    font-style: normal;
 }
