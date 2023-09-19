@@ -1,0 +1,112 @@
+body {
+    color: #444;
+    line-height: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 중요한 태그 */
+
+.section {
+    padding: 100px 0;
+}
+
+.section .tit {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.section .tit h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.section .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* 마지막 박스에는 마진 안주기 */
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#mainContent {
+    background: #ddd;
+}
+
+#mainContent .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainContent .inner figure {
+    flex: 1 0 50%;
+}
+
+/* @media (max-width:768px) {
+    #mainContent .inner {
+        flex-direction: column;
+    }
+
+    #mainContent .inner figure:nth-child(2) {
+        order: -1;
+    }
+}
+ */
+/* --------------------------- */
+
+#mainContent02 .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*
+    또 다른 가로배치 하는 법
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    
+    grid-template-columns: repeat(2, 1fr); */
+}
+
+
+#mainContent02 .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}
+
+/* --------------------------------------------------- */
+
+
+#mainContent03 .inner figure {
+    float: left;
+    width: 50%;
+    height: 280px;
+}
+
+#mainContent03 .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}

@@ -179,9 +179,10 @@ h2 {
 
 .content figure:hover .cover {
     inset: 0 auto auto 0;
-
 }
 
+
+/* ↓ ↓ */
 .customer .inner {
     max-width: 1200px;
     margin: 0 auto;
