@@ -7,56 +7,195 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html basic</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
 </head>
 
 <body>
     <header class="header">
         <h1>Html basic - 처음 배우는 html</h1>
-        <p>백선우 <br>*230519
-        </p>
+        <p>백선우</p>
     </header>
 
+    <hr>
+    <i class="xi-heart"></i>
+    <style>
+        hr {
+            position: relative;
+            border: none;
+            border-top: 3px solid lightsteelblue;
+            overflow: visible;
+        }
+
+        hr::before {
+            content: "\ea10";
+            font-family: xeicon;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 10px;
+            color: lightpink;
+            border: 3px solid lightsteelblue;
+            border-radius: 50%;
+            background: #fff;
+        }
+    </style>
+
+
+    <h2>미니테스트</h2>
+    <a href="/test01.html" target="_blank">미니테스트 결과</a>
+
+    <hr>
+
     <h2>기본 실습 layout</h2>
+    <ol>
+        <li><a href="./doc/basic.html" target="_blank">기본 실습 layout</a></li>
+        <li><a href="./doc/section01.html" target="_blank">기본 실습 layout - 가로배치 3종 - flex , grid , float</a></li>
+        <li><a href="./doc/section02.html" target="_blank">기본 실습 layout - 이미지 4개 가로배치</a></li>
+        <li><a href="./doc/section03.html" target="_blank">기본 실습 layout - 호버시 돌아가는 이미지 </a></li>
+    </ol>
+
+    <hr>
+
+    <h2>CSS header layout</h2>
+    <ol>
+        <li><a href="./doc/header_basic01.html" target="_blank">기본 header 만들기</a></li>
+        <li><a href="./doc/header_basic02.html" target="_blank">기본 header 만들기 - 로고가 정 가운데</a></li>
+        <li><a href="./doc/header_basic03.html" target="_blank">기본 header 만들기 - 로고가 정 가운데 2 !</a></li>
+        <li><a href="./doc/header_basic04.html" target="_blank">기본 header 만들기 - fixed를 활용하여 따라다니는 헤더 </a></li>
+    </ol>
+
+    <hr>
+
+
+    <h2>CSS Layout Header Part</h2>
     <ul>
-        <li><a href="./doc/basic.html">기본 실습 layout</a></li>
+        <li><a href="./doc/header01.html" target="_blank">제일 기본</a></li>
     </ul>
+
+    <ol>
+        <li><a href="./doc/header02.html" target="_blank"> 다단메뉴 - 따로 나오는 소메뉴</a></li>
+        <li><a href="./doc/header03.html" target="_blank"> 다단메뉴 - 전체적으로 나오는 소메뉴</a></li>
+        <li><a href="./doc/header04.html" target="_blank">다단메뉴 - 전체적으로 부드럽게 나오는 소메뉴 </a></li>
+    </ol>
+
+
+    <hr>
+
 
     <h2>요소의 가로배치</h2>
-    <ul>
-        <li><a href="./doc/01_display.html" target="_blank">요소의 가로배치 01 - display: flex</a></li>
-        <li><a href="./doc/02_float.html" target="_blank">요소의 가로배치 02 - float : 23.05.17</a></li>
-    </ul>
+    <ol>
+        <li><a href="./doc/01_display.html" target="_blank">요소의 가로배치 - display: flex</a></li>
+        <li><a href="./doc/02_float.html" target="_blank">요소의 가로배치 - float </a></li>
+    </ol>
+
+    <hr>
 
     <h2>background </h2>
-    <ul>
-        <li><a href="./css/background.html">background 배우기 !! </a></li>
-    </ul>
+    <ol>
+        <li><a href="./css/background.html" target="_blank">background 배우기 </a></li>
+    </ol>
 
+    <hr>
+
+    <h2>video</h2>
+    <ol>
+        <li><a href="./doc/video01.html" target="_blank">동영상_mp4 01</a></li>
+        <li><a href="./doc/video02.html" target="_blank">동영상_mp4_02</a></li>
+        <li><a href="./doc/video3.html" target="_blank">동영상 + 지도</a></li>
+    </ol>
+
+    <hr>
+
+    <h2>sprite 기법</h2>
+    <ol>
+        <li><a href="./doc/sprite01.html">스프라이트 기법</a></li>
+    </ol>
+
+    <hr>
 
     <h2>요소의 겹침 01 </h2>
 
-    <ul>
-
+    <ol>
         <li><a href="./doc/position00.html" target="_blank">position에 대해 알아보기 00 - 기본</a></li>
         <li><a href="./doc/position01.html" target="_blank">position에 대해 알아보기 01 - POPUP창 만들기!</a></li>
         <li><a href="./doc/position02.html" target="_blank">position에 대해 알아보기 02 - 우는 얼굴 만들기!</a></li>
         <li><a href="./doc/position03.html" target="_blank">position에 대해 알아보기 02 - 사방에서 나오는 배너를 만들자!</a></li>
-    </ul>
+    </ol>
+
+    <hr />
+
+    <h2>:hover를 집중적으로 배워보자 position 배우기</h2>
+    <ol>
+        <li><a href="./doc/hover01.html" target="_blank">hover 기본</a></li>
+        <li><a href="./doc/hover02.html" target="_blank">hover - 그라데이션 이미지</a></li>
+        <li><a href="./doc/hover03.html" target="_blank">hover - 아웃라인</a></li>
+        <li><a href="./doc/hover04.html" target="_blank">hover - 그라데이션 아웃라인</a></li>
+        <li><a href="./doc/hover05.html" target="_blank">hover - 자바스크립트 사용</a></li>
+    </ol>
+
+    <hr>
+
+    <h2>STICKY의 활용</h2>
+    <ol>
+        <li><a href="./doc/sticky01.html" target="_blank">sticky 사용하기</a></li>
+    </ol>
+    <hr>
 
 
     <h2>slider</h2>
-    <ul>
+    <ol>
         <li>
-            <a href="./doc/mainVisua01.html">메인비주얼 반응형 슬라이드</a>
+            <a href="./doc/mainVisua01.html" target="_blank">메인비주얼 반응형 슬라이드</a>
         </li>
-    </ul>
+    </ol>
+
+
+    <hr>
+
 
     <h2>slider - content</h2>
-    <ul>
+    <ol>
         <li>
-            <a href="./doc/product01.html">제품 슬라이드</a>
+            <a href="./doc/product01.html" target="_blank">기본 - 제품 슬라이드</a>
         </li>
-    </ul>
+    </ol>
+
+
+    <hr>
+
+
+    <h2>Tab menu 01 - display: none, block으로 공간을 제어하기</h2>
+    <ol>
+        <li>
+            <a href="./doc/tab01.html" target="_blank">display: none, block tab menu</a>
+        </li>
+    </ol>
+
+
+    <hr>
+
+
+    <h2>가상 요소 - ::before , ::after</h2>
+    <ol>
+        <li><a href="./doc/pseudo-element01.html" target="_blank"> 가상 요소</a></li>
+    </ol>
+
+
+    <hr>
+
+
+
+
+    <hr>
+
+
+    <h2>애니메이션 요소 - 튀어나오는 자동차</h2>
+    <ol>
+        <li><a href="./doc/silck_main_animation01.html" target="_blank"> 현대자동차</a></li>
+    </ol>
+
 
     <!-- target="_blank" 새창으로 뜨기 -->
 </body>
